@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Color</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #options_conatiner{
+            display: grid;
+            grid-template-columns: repeat(3, 0fr);
+        }
+        #options_conatiner > div{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     
+    <div>
+        <h1 id="color_code"></h1>
+    </div>
+    <div>
+        <h4>Score : <span id="score"></span></h4>
+    </div>
+
+    <div id="options_conatiner"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
